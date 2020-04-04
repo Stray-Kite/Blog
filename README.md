@@ -36,11 +36,11 @@
 
 > 数据库blog，有两个数据表,下面的那个加密后的密码其实就是 **123456**
 >
-> **表一**author
+> **表一\：**author
 >
 >  <img src="./media/08.png" width="300">
 >
-> **表二**article：
+> **表二\：**article：
 >
 >  <img src="./media/09.png" width="300px">
 >
