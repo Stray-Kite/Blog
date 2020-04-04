@@ -1,0 +1,355 @@
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul,li{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.floatfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.floatfix{
+    *zoom:1;
+}
+body{
+    background:#f0f0f0;
+
+}
+.login-pane {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+.login-pane::before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: url("../images/login.jpg") 0 / cover fixed;
+    filter: blur(10px);
+    z-index: -1;
+    margin: -30px;
+}
+.login, .login body{
+    height:100%;
+    width:100%;
+}
+.login-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login body{
+    background-image:url("../images/login.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+}
+.login .form-group{
+    padding-bottom: 30px;
+}
+.form-group input {
+    height: 24px;
+    box-shadow: 0 0 15px grey;
+}
+footer p{
+    text-align: center;
+    line-height:1.5em;
+    margin:0;
+}
+.form-group,.text-group {
+    padding: 0 20px 10px;
+}
+.form-group{
+    height: 40px;
+}
+.form-group label{
+    width: 43px;
+    text-align: right;
+    display: inline-block;
+}
+.form-group input{
+    border:1px solid #c0c0c0;
+    border-radius: 3px;
+    padding: 6px 5px;
+    margin-left:20px;
+}
+.text-group textarea{
+    height:820px;
+}
+.text-group label{
+    vertical-align: top;
+}
+.login .form-group p{
+    margin: 0;
+    font-size: 12px;
+    color: #d20505;
+    line-height: 20px;
+}
+.login form{
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -125px
+}
+.login form input{
+    width: 275px;
+    background: #fff;
+    margin: 0;
+}
+.login form input[type='submit'] {
+    width: 90px;
+    display:block;
+    margin: 0 auto;
+    height: 40px;
+    background:#183D8E;
+    color:#fff;
+    cursor:pointer;
+}
+.login footer{
+    position:absolute;
+    bottom:20px;
+    display: block;
+    width:100%;
+}
+
+header{
+    height:135px;
+    background-image:url("../images/header.png");
+    background-position:center;
+    margin-bottom:25px;
+}
+header h1{
+    margin:0;
+    text-align:center;
+    color:#fff;
+    font-size:30px;
+    line-height:35px;
+    padding:50px 0;
+    word-spacing: 0.5em;
+}
+.main{
+    padding:0 15px;
+    width:1170px;
+    margin:0 auto;
+    margin-bottom:25px;
+}
+aside{
+    width:180px;
+    padding:9px;
+    border:1px solid #c0c0c0;
+    float:left;
+    min-height:450px;
+    height:100%;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+aside ul li{
+    list-style: none;
+    height:30px;
+    text-align: center;
+}
+aside ul li a{
+    font-size:16px;
+    line-height:30px;
+}
+aside ul li a:hover{
+    color:#183D8E;
+}
+.main-aside-avatar{
+    margin-bottom:10px;
+}
+.main-aside-avatar img{
+    width:100%;
+    border-radius: 6px 6px 50% 50%;
+}
+.nav li{
+    height: 40px;
+    line-height: 40px;
+}
+.main-articles{
+    margin-left:220px;
+}
+.title {
+    color: #808080;
+    font-weight: bolder;
+}
+.main-articles-item{
+    height:80px;
+    border:1px solid #c0c0c0;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius: 4px;
+    background-image: linear-gradient(75deg, transparent 76%,#66CCFF 77%,#6699FF 78%,transparent 79%,transparent 80%,#6699FF 81%);
+}
+.main-articles-item:last-child{
+    margin-bottom: 0;
+}
+.main-articles-item h2{
+    margin:0;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+}
+.main-articles-items-des span{
+    padding-right:8px;
+    color:#333;
+    font-size: 14px;
+}
+@keyframes move {
+    from{
+        /*transform:translate(0px, 0);*/
+    }
+    to{
+        transform:translate(10px, 0);
+        box-shadow: 0 0 14px #C8C8C8;
+    }
+}
+.main-articles-item:hover{
+    animation:move 1s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+section.articles{
+    border: 1px solid #c0c0c0;
+    min-height: 468px;
+    padding: 0 15px;
+}
+.main-articles-title{
+    border-bottom:1px solid #c0c0c0;
+}
+.main-articles-title h2{
+    text-align: center;
+}
+.main-articles-title p{
+    font-size:14px;
+    text-align: center;
+}
+.main-articles-title p span{
+    padding: 0 10px
+}
+.main-articles-content p{
+    text-indent: 2em;
+    font-size:16px;
+    line-height: 1.8em;
+}
+.edit label,.editp label {
+    width: 10%;
+    text-align: right;
+    display: inline-block;
+}
+.edit input,.edit textarea{
+    border:1px solid #c0c0c0;
+    border-radius: 3px;
+    width: 85%;
+    padding: 6px 5px;
+    margin-left:20px;
+}
+.edit p{
+    text-align: center;
+}
+.edit input[type="submit"] {
+    width: 90px;
+    height: 40px;
+    background: #183D8E;
+    color: #fff;
+    cursor: pointer;
+}
+.form-group input {
+    height: 24px;
+}
+.text-group textarea{
+    height:330px;
+}
+.text-group label{
+    vertical-align: top;
+}
+.friends h2{
+    text-align:center;
+}
+.friends li{
+    float:left;
+    width:25%;
+    height:30px;
+    line-height:30px;
+}
+.friends li a:hover{
+    color:#183D8E;
+}
+.about h2{
+    text-align: center;
+}
+.about p{
+    text-indent: 2em;
+}
+span.modify{
+    float:right;
+    width: 40px;
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    background-color: #FF6633;
+    opacity: 0.8;
+}
+span.modify:hover {
+    background-color: #FF6600 ;
+    opacity: 1;
+}
+span.delete{
+    float:right;
+    width: 40px;
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    background-color: rgba(248,0,0, 0.7);
+}
+span.delete:hover{
+    background-color: rgba(248,0,0, 1);
+}
+
+.page {
+    text-align: center;
+    margin-top: 15px;
+}
+.page span {
+    display: inline-block;
+    background-color: #fff;
+    width: 24px;
+    margin: 0 5px;
+    line-height: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.page span a {
+    display: block;
+    border-radius: 50%;
+}
+.page span.active a {
+    background-color: #183D8E;
+    color: #fff;
+}
+.page span:hover a {
+    background-color: #B0B0B0;
+    color: #fff;
+}
+footer{
+    background-image: url("../images/background.jpg");
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div p {
+    color: #fff;
+}
