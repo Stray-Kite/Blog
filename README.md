@@ -30,7 +30,7 @@
 
 > 左边为项目路径，右边为更细一步的路径
 >
-> <img src="./media/01.png" width="300" height="350px"><img src="./media/02.png" width="300" height="350px">
+> <img src="https://github.com/Stray-Kite/Blog/blob/master/media/01.png" width="300" height="350px"><img src="./media/02.png" width="300" height="350px">
 
 ## 数据库设计
 
