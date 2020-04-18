@@ -71,7 +71,7 @@
 
 > 登录界面
 >
->  <img src="./media/03.png" width="600px">
+>  <img src="https://github.com/Stray-Kite/Blog/blob/master/media/01.png" width="600px">
 
 > 首页界面,图一为未登录时的首页，图二未登录时的首页
 >
